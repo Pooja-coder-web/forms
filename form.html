@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <form method="post" action="index.html">
+        <div>
+            <label for="name">Name</label>
+            <input type="text" name="name" placeholder="Enter your name" required autofocus autocomplete="on">
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="Password" name="password" placeholder="Enter the Password" required/>
+            <span>Show</span>
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="Enter the email">
+        </div>
+        <div>
+            <label for="gender">Gender</label>
+            <input type="radio" name="gender" value="male"/>Male
+            <input type="radio" name="gender" value="female"/>Female
+            <input type="radio" name="gender" value="others"/>Others
+        </div>
+        <div>
+            <label for="Hobbies">Hobbies</label>
+            <input type="checkbox" value="read"/>Reading
+            <input type="checkbox" value="sleep">Sleeping
+            <input type="checkbox" value="dance">Dancing
+            <input type="checkbox" value="eat">Eating
+            <input type="checkbox" value="reels">Watching Reels
+        </div>
+        <div>
+            <label for="qual">Qualification</label>
+            <select name="qual" id="qual">
+                <option value="Doctorate">Doctorate</option>
+                <option value="Graduation">Graduation</option>
+                <option value="IT">Information Technology</option>
+                <option value="CS">Computer Science</option>
+                <option value="Engineering">Engineering</option>
+            </select>
+        </div>
+        <div>
+            <label for="address">Address</label>
+            <textarea name="address" id="address" placeholder="address" cols="30" rows="3" style="resize:none"></textarea>
+        </div>
+        <div>
+            <label for="color">Color</label>
+            <input type="color">
+        </div>
+        <div>
+            <label for="age">Age</label>
+            <input type="number" name="age" placeholder="Enter the age" min="18" max="90" step="3">
+        </div>
+        <div>
+            <label for="">Price Range</label>
+            <input type="range" min="1000" max="100000" step="1000"/>
+        </div>
+        <div>
+            <label for="">DOB</label>
+            <input type="date">
+        </div>
+        <div>
+            <label for="resume">Resume</label>
+            <input type="file">
+        </div>
+        <button type="submit">Register</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
